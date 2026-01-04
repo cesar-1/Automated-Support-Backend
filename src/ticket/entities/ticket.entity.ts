@@ -8,7 +8,7 @@ import {
   ManyToOne, 
   JoinColumn 
 } from 'typeorm';
-import { User } from './users/entities/user.entity' ; // Path to your User entity
+import { User } from 'Users/user.entity' ; // Path to your User entity
 // import { Category } from './category.entity'; // Uncomment when you create Category
 
 @ObjectType()
