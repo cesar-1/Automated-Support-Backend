@@ -3,6 +3,8 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
 import { PermissionsModule } from './permissions/permissions.module';
+import { AiRunModule } from './ai-run/ai-run.module';
+import { AttatchmentModule } from './attatchment/attatchment.module';
 import { CommentsModule } from './comments/comments.module';
 import { CategoriesModule } from './categories/categories.module';
 import { TicketModule } from './ticket/ticket.module';
@@ -17,7 +19,7 @@ import { EntityModule } from './entity/entity.module';
 import { PermissionsModule } from './permissions/permissions.module';
 
 @Module({
-  imports: [UsersModule, PermissionsModule, EntityModule, InputModule, ControllerModule, ServiceModule, ModelModule, InterfaceModule, TicketModule, CategoriesModule, CommentsModule],
+  imports: [UsersModule, PermissionsModule, EntityModule, InputModule, ControllerModule, ServiceModule, ModelModule, InterfaceModule, TicketModule, CategoriesModule, CommentsModule, AttatchmentModule, AiRunModule],
   controllers: [AppController],
   providers: [AppService],
 })
