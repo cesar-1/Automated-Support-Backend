@@ -11,13 +11,14 @@ import { AuditTrailsEntity } from '../../common/entities/audit-trails.entity';
 import { text } from 'stream/consumers';
 import { Timestamp } from 'typeorm/browser';
 import { time } from 'console';
+import { UUID } from 'crypto';
 
 @ObjectType() 
 @Entity('users') 
 export class Userentity extends AuditTrailsEntity {
   
   @PrimaryGeneratedColumn('uuid')
-  id: string;
+  id: UUID; 
 
   @Column({ 
     type: 'varchar',
